@@ -1,0 +1,9 @@
+#canvas-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#canvas-container-square {
+  width: min(100vh, 100vw);
+  height: min(100vh, 100vw);
+}
