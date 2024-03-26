@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "skipLibCheck": true,
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
-    "skipLibCheck": true,
+    "types": ["node"],
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "checkJs": false,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -22,6 +24,7 @@
       "@data/*": ["__data__/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "tailwind.config.ts", "postcss.config.cjs"],
+  "check": false,
   "references": [{ "path": "./tsconfig.node.json" }]
 }
